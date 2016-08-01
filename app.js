@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 
 module.exports = request = require('request');
 
-var yellsBot1 = require('./routes/yellsbot1');
+//var yellsBot1 = require('./routes/yellsbot1');
 
 
 //module.exports = bot = require('fancy-groupme-bot');
