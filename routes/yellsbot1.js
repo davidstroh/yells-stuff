@@ -8,7 +8,8 @@ yellsBot.message("Oh! It's the military community!");*/
 //app.use('/yellsstuff', router);
 
 router.get('/yells', function(req, res, next){
-  res.json( {'title': 'heya'});
+  res.json( {'title': 'heya'} );
+  console.log( {'title': 'heya'} );
   next();
 });
 
@@ -31,7 +32,7 @@ router.get('/yells/members', function(req, res, next){
       console.log("the request happen");
     }
     else {
-      console.log('rejecting bad status code ' + response.statusCode);
+      console.log('rejecting bad status code ');
     }
   });
 });
