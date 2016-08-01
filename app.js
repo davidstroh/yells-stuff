@@ -10,11 +10,11 @@ app.use(bodyParser.json());
 
 //var yellsBot1 = require('./routes/yellsbot1');
 
-var port = 5000 || process.env.PORT;
+var port = process.env.PORT || 5000;
 
 app.get('/', function(req, res){
   res.json( {'title': 'heya'} );
-})
+});
 
 //app.use('/bot', router);
 
