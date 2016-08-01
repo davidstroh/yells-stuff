@@ -12,7 +12,7 @@ router.get('/yells', function(req, res, next){
   next();
 });
 
-//router.get('/yells/members', function(req, res, next){
+router.get('/yells/members', function(req, res, next){
 
   var options = {
     hostname: 'api.groupme.com',
@@ -34,7 +34,7 @@ router.get('/yells', function(req, res, next){
       console.log('rejecting bad status code ' + response.statusCode);
     }
   });
-//});
+});
 
 /*router.post('/yell', function(req, res, next){
   var senderType = req.body.sender_type,
