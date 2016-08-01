@@ -1,13 +1,13 @@
 var botConfig = { token:'3107c520384201344ec26763b4a81e13',
                   group:'23303302',
                   name:'yells stuff',
-                  url:'https://localhost:3000/api/rec' };
+                  url:'https://localhost:5000/api/rec' };
 /*var yellsBot = bot(botConfig);
 yellsBot.on('botMessage', function(bot, message) {console.log(message.name + " said " + message.text);} );
 yellsBot.message("Oh! It's the military community!");*/
 //app.use('/yellsstuff', router);
 
-router.get('/yells', function(req, res, next){
+router.get('/', function(req, res, next){
   res.json( {'title': 'heya'} );
   console.log( {'title': 'heya'} );
   next();

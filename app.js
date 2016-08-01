@@ -17,7 +17,7 @@ var yellsBot1 = require('./routes/yellsbot1');
 
 var port = 5000 || process.env.PORT;
 
-app.use('/bot', router);
+//app.use('/bot', router);
 
 
 app.listen(port);
